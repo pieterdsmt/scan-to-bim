@@ -1,0 +1,102 @@
+[
+  {
+    "view": "facade_left_proposal",
+    "source_face": 6,
+    "opening_ids": [
+      "O05",
+      "O07",
+      "O08"
+    ],
+    "horizontal_axis": 1,
+    "horizontal_sign": -1,
+    "validation": {
+      "path": "facade_left_proposal.dxf",
+      "ok": true,
+      "entity_count": 13,
+      "layer_names": [
+        "0",
+        "Defpoints",
+        "S2B-FACADE-OPENING-CANDIDATE",
+        "S2B-FACADE-VERTICAL-REFERENCE",
+        "S2B-FACADE-OBSERVED"
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    "jamb_plan_agreement_tolerance_m": 1e-10
+  },
+  {
+    "view": "facade_right_proposal",
+    "source_face": 4,
+    "opening_ids": [
+      "O04"
+    ],
+    "horizontal_axis": 1,
+    "horizontal_sign": 1,
+    "validation": {
+      "path": "facade_right_proposal.dxf",
+      "ok": true,
+      "entity_count": 6,
+      "layer_names": [
+        "0",
+        "Defpoints",
+        "S2B-FACADE-OPENING-CANDIDATE",
+        "S2B-FACADE-VERTICAL-REFERENCE",
+        "S2B-FACADE-OBSERVED"
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    "jamb_plan_agreement_tolerance_m": 1e-10
+  },
+  {
+    "view": "facade_front_proposal",
+    "source_face": 7,
+    "opening_ids": [
+      "O06"
+    ],
+    "horizontal_axis": 0,
+    "horizontal_sign": 1,
+    "validation": {
+      "path": "facade_front_proposal.dxf",
+      "ok": true,
+      "entity_count": 6,
+      "layer_names": [
+        "0",
+        "Defpoints",
+        "S2B-FACADE-OPENING-CANDIDATE",
+        "S2B-FACADE-VERTICAL-REFERENCE",
+        "S2B-FACADE-OBSERVED"
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    "jamb_plan_agreement_tolerance_m": 1e-10
+  },
+  {
+    "view": "facade_rear_proposal",
+    "source_face": 3,
+    "opening_ids": [
+      "O01",
+      "O02",
+      "O03"
+    ],
+    "horizontal_axis": 0,
+    "horizontal_sign": -1,
+    "validation": {
+      "path": "facade_rear_proposal.dxf",
+      "ok": true,
+      "entity_count": 12,
+      "layer_names": [
+        "0",
+        "Defpoints",
+        "S2B-FACADE-OPENING-CANDIDATE",
+        "S2B-FACADE-VERTICAL-REFERENCE",
+        "S2B-FACADE-OBSERVED"
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    "jamb_plan_agreement_tolerance_m": 1e-10
+  }
+]
