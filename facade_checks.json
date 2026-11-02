@@ -12,18 +12,23 @@
     "validation": {
       "path": "facade_left_proposal.dxf",
       "ok": true,
-      "entity_count": 13,
+      "entity_count": 16,
       "layer_names": [
         "0",
         "Defpoints",
         "S2B-FACADE-OPENING-CANDIDATE",
         "S2B-FACADE-VERTICAL-REFERENCE",
-        "S2B-FACADE-OBSERVED"
+        "S2B-FACADE-OPS-HOLE-BOUNDARY",
+        "S2B-FACADE-OBSERVED",
+        "S2B-FACADE-ASSUMED-RECESS"
       ],
       "errors": [],
       "warnings": []
     },
-    "jamb_plan_agreement_tolerance_m": 1e-10
+    "jamb_plan_agreement_tolerance_m": 1e-10,
+    "opening_boundary_export_exact": true,
+    "ops_hole_boundaries": 1,
+    "assumed_recess_boundaries": 2
   },
   {
     "view": "facade_right_proposal",
@@ -36,18 +41,22 @@
     "validation": {
       "path": "facade_right_proposal.dxf",
       "ok": true,
-      "entity_count": 6,
+      "entity_count": 7,
       "layer_names": [
         "0",
         "Defpoints",
         "S2B-FACADE-OPENING-CANDIDATE",
         "S2B-FACADE-VERTICAL-REFERENCE",
+        "S2B-FACADE-OPS-HOLE-BOUNDARY",
         "S2B-FACADE-OBSERVED"
       ],
       "errors": [],
       "warnings": []
     },
-    "jamb_plan_agreement_tolerance_m": 1e-10
+    "jamb_plan_agreement_tolerance_m": 1e-10,
+    "opening_boundary_export_exact": true,
+    "ops_hole_boundaries": 1,
+    "assumed_recess_boundaries": 0
   },
   {
     "view": "facade_front_proposal",
@@ -60,18 +69,22 @@
     "validation": {
       "path": "facade_front_proposal.dxf",
       "ok": true,
-      "entity_count": 6,
+      "entity_count": 7,
       "layer_names": [
         "0",
         "Defpoints",
         "S2B-FACADE-OPENING-CANDIDATE",
         "S2B-FACADE-VERTICAL-REFERENCE",
+        "S2B-FACADE-OPS-HOLE-BOUNDARY",
         "S2B-FACADE-OBSERVED"
       ],
       "errors": [],
       "warnings": []
     },
-    "jamb_plan_agreement_tolerance_m": 1e-10
+    "jamb_plan_agreement_tolerance_m": 1e-10,
+    "opening_boundary_export_exact": true,
+    "ops_hole_boundaries": 1,
+    "assumed_recess_boundaries": 0
   },
   {
     "view": "facade_rear_proposal",
@@ -86,17 +99,21 @@
     "validation": {
       "path": "facade_rear_proposal.dxf",
       "ok": true,
-      "entity_count": 12,
+      "entity_count": 15,
       "layer_names": [
         "0",
         "Defpoints",
         "S2B-FACADE-OPENING-CANDIDATE",
         "S2B-FACADE-VERTICAL-REFERENCE",
+        "S2B-FACADE-OPS-HOLE-BOUNDARY",
         "S2B-FACADE-OBSERVED"
       ],
       "errors": [],
       "warnings": []
     },
-    "jamb_plan_agreement_tolerance_m": 1e-10
+    "jamb_plan_agreement_tolerance_m": 1e-10,
+    "opening_boundary_export_exact": true,
+    "ops_hole_boundaries": 3,
+    "assumed_recess_boundaries": 0
   }
 ]
