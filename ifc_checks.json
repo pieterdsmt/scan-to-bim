@@ -1,0 +1,2886 @@
+{
+  "schema": "IFC4",
+  "units": "metres",
+  "schema_validation_errors": 0,
+  "source_evidence_sha256": "55f9a170a8af045096cc80aef2f3cfb22978fb6ebf5022594bdfd3f5b2a57ec0",
+  "ifc_sha256": "98d5fd4fe931984fb225afcfcfd4096d23b0585f32191ca67c7756e9021bb179",
+  "selection": "walls area>=1m2 and height>=1m; slabs near 0/2.8/5.4m area>=3m2; sloped faces above 3.5m area>=1m2. All classifications provisional.",
+  "assumptions": [
+    "Walls 0.20m and roof 0.15m centered on detected plane; thickness assumed.",
+    "Floor assemblies extend downward from observed tops; overlapping lower surfaces propose depth where available, otherwise 0.20m assumed.",
+    "Storey references 0.00/2.80/5.40m from observed height peaks; not confirmed floor datum.",
+    "Faces are not merged into unique construction walls; opposite faces may duplicate.",
+    "Connections are bounded <=5cm plan-gap proposals from fixed-height sections, not measured wall junctions. Full wall-extents geometry remains provisional.",
+    "IfcSpace elements are connected floor regions with virtual candidate-door boundaries; not confirmed individual rooms. Attic spaces are not guessed.",
+    "Unscanned walls, foundations, stairs, window/door fills and fittings are not invented.",
+    "Detected holes at all levels are provisional voids, not verified architectural openings.",
+    "No map CRS inferred; public IFC uses the shared relative building coordinates."
+  ],
+  "elements": [
+    {
+      "id": "0PvlPv98H0ax5Ub1Of9P_o",
+      "name": "F1-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 1,
+      "note": "OPS F1; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.13..7.17 m. 3 onbevestigde uitsparingen; planreferenties: O04.",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 10.826706102097596,
+      "expected_removed_volume_m3": 1.2673883792307568,
+      "shared_opening_ids": [
+        "O04"
+      ],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 9.559317722866862
+    },
+    {
+      "id": "0IoaShEhbBKRmJ$4_IDOe2",
+      "name": "F2-0 slabs",
+      "ifc_class": "IfcSlab",
+      "category": "slabs",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 2,
+      "note": "OPS F2; vloerfunctie voorlopig. Bovenzijde op waargenomen vlak; dikte 0.200 m naar beneden. Onderzijde en dikte aangenomen.",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 8.300445274093628,
+      "expected_removed_volume_m3": 0.05068400978404384,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 8.249761264309587
+    },
+    {
+      "id": "0X64DxYaXF2PrhERz$jMZF",
+      "name": "F3-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 3,
+      "note": "OPS F3; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.18..7.16 m. 5 onbevestigde uitsparingen; planreferenties: O05, O07.",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 9.537762284987922,
+      "expected_removed_volume_m3": 1.5162619031568907,
+      "shared_opening_ids": [
+        "O05",
+        "O07"
+      ],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 8.021500381831027
+    },
+    {
+      "id": "1OVQUoAQ1DARBfCOqjVvX5",
+      "name": "F5-0 slabs",
+      "ifc_class": "IfcSlab",
+      "category": "slabs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 5,
+      "note": "OPS F5; vloerfunctie voorlopig. Bovenzijde op waargenomen vlak; dikte 0.215 m naar beneden. Onderzijde met overlappende OPS-vlakken [4, 12, 21, 23, 26]; afstand tussen oppervlakken gemeten, vloeropbouw niet bevestigd.",
+      "assumed_thickness_m": 0.21534416986771143,
+      "expected_gross_volume_m3": 7.661539217874569,
+      "expected_removed_volume_m3": 0.08803685799057617,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": {
+        "upper_face": 5,
+        "lower_faces": [
+          4,
+          12,
+          21,
+          23,
+          26
+        ],
+        "upper_height_m": 2.8092334594761645,
+        "lower_height_m": 2.593889289608453,
+        "observed_surface_separation_m": 0.21534416986771143,
+        "overlap_fraction": 0.8998613743400934,
+        "status": "Proposed floor assembly between overlapping observed surfaces"
+      },
+      "verified_net_volume_m3": 7.573502359883988
+    },
+    {
+      "id": "38c73XQrj7yBc2g6Xfc6c3",
+      "name": "F6-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 6,
+      "note": "OPS F6; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.16..3.87 m. 3 onbevestigde uitsparingen; planreferenties: O01, O02, O03.",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 7.133629571804964,
+      "expected_removed_volume_m3": 0.32214706801223714,
+      "shared_opening_ids": [
+        "O01",
+        "O02",
+        "O03"
+      ],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 6.811482503792725
+    },
+    {
+      "id": "3alySSzLX4pwVpZ5RP_5Hg",
+      "name": "F7-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "0aOSvhdAD4yvE1Ha4RBMZq",
+      "source_face": 7,
+      "note": "OPS F7; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 5.54..7.11 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 3.6728647299808324,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 3.672864729980817
+    },
+    {
+      "id": "1NL2M_veXAFuzT0n5osoMJ",
+      "name": "F9-0 slabs",
+      "ifc_class": "IfcSlab",
+      "category": "slabs",
+      "storey": "0aOSvhdAD4yvE1Ha4RBMZq",
+      "source_face": 9,
+      "note": "OPS F9; vloerfunctie voorlopig. Bovenzijde op waargenomen vlak; dikte 0.223 m naar beneden. Onderzijde met overlappende OPS-vlakken [8, 15, 19]; afstand tussen oppervlakken gemeten, vloeropbouw niet bevestigd.",
+      "assumed_thickness_m": 0.22345708137345266,
+      "expected_gross_volume_m3": 5.227458416714436,
+      "expected_removed_volume_m3": 0.15688111331626917,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": {
+        "upper_face": 9,
+        "lower_faces": [
+          8,
+          15,
+          19
+        ],
+        "upper_height_m": 5.409915065197058,
+        "lower_height_m": 5.186457983823606,
+        "observed_surface_separation_m": 0.22345708137345266,
+        "overlap_fraction": 0.8768167368070541,
+        "status": "Proposed floor assembly between overlapping observed surfaces"
+      },
+      "verified_net_volume_m3": 5.070577303398165
+    },
+    {
+      "id": "2fzq2Vsvb67PbG56TbhDAh",
+      "name": "F10-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "0aOSvhdAD4yvE1Ha4RBMZq",
+      "source_face": 10,
+      "note": "OPS F10; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 5.51..7.11 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 3.376297409326811,
+      "expected_removed_volume_m3": 0.020515833915272532,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 3.355781575411553
+    },
+    {
+      "id": "1uHBc9s9D8ROlY4MDu9tAy",
+      "name": "F11-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 11,
+      "note": "OPS F11; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.05..4.47 m. 1 onbevestigde uitsparingen; planreferenties: O06.",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 3.9466354661874763,
+      "expected_removed_volume_m3": 0.7699496737942648,
+      "shared_opening_ids": [
+        "O06"
+      ],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 3.176685792393216
+    },
+    {
+      "id": "38cBcMpQf5fxZnTkQpg95C",
+      "name": "F13-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 13,
+      "note": "OPS F13; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.06..3.88 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 2.7259307754642883,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 2.725930775464284
+    },
+    {
+      "id": "3AcxN2pl93vhzGNaBKO1AU",
+      "name": "F14-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 14,
+      "note": "OPS F14; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..5.19 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 2.5626950629050675,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 2.56269506290507
+    },
+    {
+      "id": "2jOzqoFP5AWQRa96IIm0VJ",
+      "name": "F16-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 16,
+      "note": "OPS F16; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.63..7.17 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 1.556834676099813,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.5568346760998129
+    },
+    {
+      "id": "3nbFRYGZr0yhSgSeLa3lVi",
+      "name": "F17-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 17,
+      "note": "OPS F17; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.61..7.17 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 1.5524827040069562,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.5524827040069327
+    },
+    {
+      "id": "0lpeZuqaT5Ku9c3zaQ7QPu",
+      "name": "F18-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 18,
+      "note": "OPS F18; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.96..5.18 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 1.458400558066275,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.4584005580662605
+    },
+    {
+      "id": "23WvwvI8151QYmGKhFS0oH",
+      "name": "F20-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 20,
+      "note": "OPS F20; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..2.60 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.71339957244088,
+      "expected_removed_volume_m3": 0.16459104917629594,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.5488085232645838
+    },
+    {
+      "id": "3f9dmiRsL1nho3jX7hCsIM",
+      "name": "F22-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 22,
+      "note": "OPS F22; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.96..5.18 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 1.047540596486278,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.0475405964862716
+    },
+    {
+      "id": "1ZEZVDq213O8FA5fCKrUVh",
+      "name": "F24-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 24,
+      "note": "OPS F24; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.80..5.19 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.3079506204275093,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.30795062042751
+    },
+    {
+      "id": "1GOgsDDb98gw7pufA$_Jbr",
+      "name": "F25-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 25,
+      "note": "OPS F25; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.92..5.15 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 0.9461512852750869,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.9461512852750922
+    },
+    {
+      "id": "2n5LGl7ur2ZfOyR09Kl6hN",
+      "name": "F27-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 27,
+      "note": "OPS F27; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.31..2.61 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.1423097714467079,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.1423097714467076
+    },
+    {
+      "id": "0XjC3Di9PEqBOtdbGuAgQE",
+      "name": "F28-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 28,
+      "note": "OPS F28; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.81..2.61 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.1269762241656747,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.1269762241656738
+    },
+    {
+      "id": "2GkJVcRnn1$fvgVdNEUSXi",
+      "name": "F29-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 29,
+      "note": "OPS F29; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..2.59 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.1221290586556345,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.1221290586556352
+    },
+    {
+      "id": "1semj$6h537BPoEbU1RUuX",
+      "name": "F30-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 30,
+      "note": "OPS F30; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.01..2.60 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.1034890085658162,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.1034890085658153
+    },
+    {
+      "id": "1FTICe5ED9MOEvmkpaZP6q",
+      "name": "F31-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 31,
+      "note": "OPS F31; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.01..2.61 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.1184514132314713,
+      "expected_removed_volume_m3": 0.021488770388216488,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.09696264284325
+    },
+    {
+      "id": "3k$F0Znm52lOlJPmgdvPru",
+      "name": "F32-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 32,
+      "note": "OPS F32; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.08..2.13 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.0801014918239062,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.0801014918239067
+    },
+    {
+      "id": "2tzyfqxgvEzgZ1KGp8Fo_g",
+      "name": "F33-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 33,
+      "note": "OPS F33; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.64..5.19 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.0703063983544874,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.0703063983544878
+    },
+    {
+      "id": "1_7l1Q1lDDwPpRuXFq4xeQ",
+      "name": "F34-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 34,
+      "note": "OPS F34; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..2.59 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.0543809738521739,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.0543809738521777
+    },
+    {
+      "id": "2xbMqq7gb9zfEDUbTi3pGF",
+      "name": "F35-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 35,
+      "note": "OPS F35; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.82..5.15 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.011783171446598,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 1.0117831714465917
+    },
+    {
+      "id": "2jbafDNTb9nesPHuQbhbZ0",
+      "name": "F36-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 36,
+      "note": "OPS F36; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 4.56..5.18 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 0.7546642805647927,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.7546642805647976
+    },
+    {
+      "id": "2Dn0nYJDv5J8o42CLKDk67",
+      "name": "F37-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 37,
+      "note": "OPS F37; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..5.18 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.1195815879421624,
+      "expected_removed_volume_m3": 0.13440492830279144,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.9851766596393698
+    },
+    {
+      "id": "1wyjFUUBH19AlrbZQs84wt",
+      "name": "F39-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 39,
+      "note": "OPS F39; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.92..5.14 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 0.8793678136795788,
+      "expected_removed_volume_m3": 0.18826686630608422,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.6911009473734965
+    },
+    {
+      "id": "1pHc6xlT9AqA3XO75PfCLd",
+      "name": "F40-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 40,
+      "note": "OPS F40; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.82..5.19 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.8623879138613093,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.8623879138613069
+    },
+    {
+      "id": "21AO$yjGPEJe8uAvOqSmYZ",
+      "name": "F41-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 41,
+      "note": "OPS F41; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..2.22 m. 2 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 1.0458682872764429,
+      "expected_removed_volume_m3": 0.20766008891252397,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.8382081983639192
+    },
+    {
+      "id": "1A$Fr9$7X6vBhOXhIVicSs",
+      "name": "F42-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 42,
+      "note": "OPS F42; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.90..2.61 m. 2 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.957049814362311,
+      "expected_removed_volume_m3": 0.13483069374904205,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.8222191206132694
+    },
+    {
+      "id": "0hH2Ic6YH5ZPRV0lF$qoAt",
+      "name": "F43-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "0aOSvhdAD4yvE1Ha4RBMZq",
+      "source_face": 43,
+      "note": "OPS F43; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 5.40..7.07 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.8362658789221599,
+      "expected_removed_volume_m3": 0.04433133049776177,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.7919345484243888
+    },
+    {
+      "id": "1an1aXj0nDkR9sIUkHpbBh",
+      "name": "F44-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 44,
+      "note": "OPS F44; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.53..2.60 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.804269746376375,
+      "expected_removed_volume_m3": 0.03478384368861057,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.7694859026877752
+    },
+    {
+      "id": "2Vj$II2X57Zuc71hRxs_K9",
+      "name": "F45-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 45,
+      "note": "OPS F45; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.97..5.18 m. 2 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.7725811920002403,
+      "expected_removed_volume_m3": 0.030698208412462843,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.7418829835877782
+    },
+    {
+      "id": "1Mjj19g6D7ruBvoYzM4NFs",
+      "name": "F46-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 46,
+      "note": "OPS F46; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.80..5.19 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.8124981078767455,
+      "expected_removed_volume_m3": 0.09968475253638073,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.7128133553403875
+    },
+    {
+      "id": "1rA$VvChzAKuPNFvhsRT8$",
+      "name": "F47-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 47,
+      "note": "OPS F47; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..2.60 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.7387977798024279,
+      "expected_removed_volume_m3": 0.0483836464815807,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.6904141333208479
+    },
+    {
+      "id": "26Pj9ET0TCOORjCkZ7Wnf$",
+      "name": "F48-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 48,
+      "note": "OPS F48; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..2.45 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.660420425918536,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.6604204259185356
+    },
+    {
+      "id": "2rnaN1p9P7IPiB4Bw_7fRa",
+      "name": "F49-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 49,
+      "note": "OPS F49; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.59..2.14 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.6550546592184998,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.6550546592184979
+    },
+    {
+      "id": "3WGKuwsHfAn8J9opvV5kPI",
+      "name": "F50-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 50,
+      "note": "OPS F50; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.14..2.36 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.6717294416264687,
+      "expected_removed_volume_m3": 0.020689714510543904,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.6510397271159245
+    },
+    {
+      "id": "0VzOOBjTn5$ORhAshQd95S",
+      "name": "F51-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 51,
+      "note": "OPS F51; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.09..4.47 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.6259284496658094,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.6259284496658101
+    },
+    {
+      "id": "3TgW7bn2L2OOvqWJiewV_Q",
+      "name": "F52-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 52,
+      "note": "OPS F52; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.26..5.15 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.6246415787041983,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.6246415787041979
+    },
+    {
+      "id": "12jFz6_2D4VRUpfaHqXdKk",
+      "name": "F53-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 53,
+      "note": "OPS F53; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..5.18 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.6076894964856324,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.6076894964856409
+    },
+    {
+      "id": "2TeaZotO13wwv29D5NGQxW",
+      "name": "F55-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 55,
+      "note": "OPS F55; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.54..4.56 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.59526948245836,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.5952694824583549
+    },
+    {
+      "id": "1dFuj3kpXBJ9X9B0TcWKRj",
+      "name": "F56-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 56,
+      "note": "OPS F56; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.56..4.82 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.5712788507024492,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.5712788507024589
+    },
+    {
+      "id": "1yStZj3n55ARuGwQ35obiI",
+      "name": "F57-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 57,
+      "note": "OPS F57; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.72..2.61 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.5701124141710522,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.5701124141710523
+    },
+    {
+      "id": "145jqLazP0uOlNzq9G3a_9",
+      "name": "F58-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 58,
+      "note": "OPS F58; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..2.59 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.5587892951868232,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.5587892951868231
+    },
+    {
+      "id": "08LWzNbFzD9uTXjw6GFJo3",
+      "name": "F59-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "0aOSvhdAD4yvE1Ha4RBMZq",
+      "source_face": 59,
+      "note": "OPS F59; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 5.41..7.11 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.5432565789444336,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.5432565789444328
+    },
+    {
+      "id": "0h9dO0lnLDgQSB4KzZqHed",
+      "name": "F60-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 60,
+      "note": "OPS F60; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..5.18 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.563271712631078,
+      "expected_removed_volume_m3": 0.020369499289547083,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.5429022133415303
+    },
+    {
+      "id": "1z1rhFpx5A39nYpbmV_JPq",
+      "name": "F61-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 61,
+      "note": "OPS F61; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.64..2.11 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.5367280918027427,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.5367280918027436
+    },
+    {
+      "id": "1snI_xDyn4feTQpSC67UI8",
+      "name": "F62-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 62,
+      "note": "OPS F62; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.02..2.60 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.5331264122732106,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.5331264122732106
+    },
+    {
+      "id": "3esiPiuLv5nx_sumcMLCg9",
+      "name": "F63-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 63,
+      "note": "OPS F63; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.59..4.89 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.5068139354795045,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.5068139354795056
+    },
+    {
+      "id": "3TyZCyMqPFeBBXHTcVjfS1",
+      "name": "F64-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 64,
+      "note": "OPS F64; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.94..2.10 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.503405750297076,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.5034057502970772
+    },
+    {
+      "id": "1ksvfu5WH5BB49U19ghHy1",
+      "name": "F65-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 65,
+      "note": "OPS F65; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.58..2.60 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.48031703054040453,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.4803170305404042
+    },
+    {
+      "id": "2hNYKQACnBEPKvHnQQE$N9",
+      "name": "F66-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 66,
+      "note": "OPS F66; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.00..1.95 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.4712619088923329,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.47126190889233455
+    },
+    {
+      "id": "1u5m9iQ_nBjgGVF9Tx5LMa",
+      "name": "F67-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 67,
+      "note": "OPS F67; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..5.15 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.4706479013887814,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.47064790138878265
+    },
+    {
+      "id": "2XnLGlIHrEifYM2XzXizpY",
+      "name": "F69-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 69,
+      "note": "OPS F69; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.61..3.81 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 0.35101266786074947,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.3510126678607627
+    },
+    {
+      "id": "19g_f6kUL6APWYRsqcoVJ9",
+      "name": "F70-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 70,
+      "note": "OPS F70; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..1.22 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.46242124150736175,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.46242124150736186
+    },
+    {
+      "id": "3MLA2OYln0H9jJj13F8qvX",
+      "name": "F71-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 71,
+      "note": "OPS F71; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.80..5.03 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.4498123634310954,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.4498123634310949
+    },
+    {
+      "id": "19kfcHJDDBFePEgKGtr6RK",
+      "name": "F72-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 72,
+      "note": "OPS F72; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.80..5.03 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.44665673756841323,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.4466567375684135
+    },
+    {
+      "id": "0hFVZHOQD5uBBKroU8ce9U",
+      "name": "F73-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 73,
+      "note": "OPS F73; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.82..5.15 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.4439944790125492,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.4439944790125495
+    },
+    {
+      "id": "2qCu7kJtP72eVc2fQtDcmw",
+      "name": "F75-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 75,
+      "note": "OPS F75; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.56..4.78 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.42187096567783827,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.421870965677834
+    },
+    {
+      "id": "39FcRQNjPE1vlGV6kf90hA",
+      "name": "F76-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 76,
+      "note": "OPS F76; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.01..2.60 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.4207052256082592,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.42070522560825924
+    },
+    {
+      "id": "0t$AbaHFbAuBRvluz_1MFO",
+      "name": "F77-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 77,
+      "note": "OPS F77; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 4.53..5.19 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 0.3127794152040914,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.31277941520409286
+    },
+    {
+      "id": "0UWoiId7T9IeYPlv1VsqsI",
+      "name": "F80-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 80,
+      "note": "OPS F80; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.46..5.15 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.37091225937338956,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.3709122593733867
+    },
+    {
+      "id": "1FWYuNJWb1DP7_2UFg5F0C",
+      "name": "F81-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 81,
+      "note": "OPS F81; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..4.80 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.3671859951976055,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.36718599519760414
+    },
+    {
+      "id": "2TdJ2VD55Bmezq9N6N0w_z",
+      "name": "F82-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 82,
+      "note": "OPS F82; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.86..5.18 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.3612867497517305,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.36128674975172786
+    },
+    {
+      "id": "0FlZ5BmqT6vgG5PsyjtJZN",
+      "name": "F83-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 83,
+      "note": "OPS F83; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..4.62 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.35903301753184436,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.3590330175318404
+    },
+    {
+      "id": "0HhQ$OtnH2deJleRrQZylH",
+      "name": "F84-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 84,
+      "note": "OPS F84; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.00..2.05 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.35168165669796075,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.35168165669796086
+    },
+    {
+      "id": "28XHr2qTb47RHbQqMJLlsT",
+      "name": "F85-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 85,
+      "note": "OPS F85; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..4.80 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.3501819375194793,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.35018193751947924
+    },
+    {
+      "id": "29jY67yuD8UgNChNa6F9VX",
+      "name": "F86-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 86,
+      "note": "OPS F86; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..4.80 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.34883904658829673,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.3488390465882967
+    },
+    {
+      "id": "1Hy8$Z9ET7EAmdmu$pcdz9",
+      "name": "F87-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 87,
+      "note": "OPS F87; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..5.19 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.34847903270997943,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.34847903270997926
+    },
+    {
+      "id": "1NOI33Bb51lRHE596uKJyx",
+      "name": "F88-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 88,
+      "note": "OPS F88; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.53..2.60 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.34776252830740906,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.34776252830740473
+    },
+    {
+      "id": "1N4aVyUln409qpm7GDiA7Q",
+      "name": "F89-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 89,
+      "note": "OPS F89; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..1.30 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.34418444541218185,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.34418444541218185
+    },
+    {
+      "id": "2LlXxXJnb0aB$XSzyTF6O7",
+      "name": "F91-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 91,
+      "note": "OPS F91; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.80..4.93 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.32010980142329737,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.3201098014232725
+    },
+    {
+      "id": "0msw66J0n7NR5eqUkhkJfy",
+      "name": "F93-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 93,
+      "note": "OPS F93; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..4.79 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.3122527110776222,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.31225271107762215
+    },
+    {
+      "id": "0XMzTmzjP1HhhIWi1CCToQ",
+      "name": "F94-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "0aOSvhdAD4yvE1Ha4RBMZq",
+      "source_face": 94,
+      "note": "OPS F94; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 5.76..7.82 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.30914754739697625,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.3091475473969607
+    },
+    {
+      "id": "2AViHpBQv9ff9Z3mJPDrVi",
+      "name": "F95-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 95,
+      "note": "OPS F95; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.61..3.17 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.30839998826442083,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.30839998826442094
+    },
+    {
+      "id": "0awjpJ3Qf03gu0yaLmMLZ6",
+      "name": "F96-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 96,
+      "note": "OPS F96; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.08..2.06 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.30658480042529224,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.30658480042529257
+    },
+    {
+      "id": "0a7wylOZzCGQMGoATLrl8X",
+      "name": "F97-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 97,
+      "note": "OPS F97; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.01..1.97 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2984526173771714,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.29845261737717005
+    },
+    {
+      "id": "23DeUryc54iBl3JoIuj13R",
+      "name": "F98-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 98,
+      "note": "OPS F98; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..4.79 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2958358198206087,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2958358198206087
+    },
+    {
+      "id": "2mNg2M46HFw9G1_FmxVMiK",
+      "name": "F99-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 99,
+      "note": "OPS F99; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..2.14 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.29514580680124086,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2951458068012411
+    },
+    {
+      "id": "1NpuxMp3v0rf09jpFvDqip",
+      "name": "F100-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 100,
+      "note": "OPS F100; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.64..7.54 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2941709150948086,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.29417091509479343
+    },
+    {
+      "id": "34qSQMJwLBiPROmbfHkJxA",
+      "name": "F101-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 101,
+      "note": "OPS F101; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..4.72 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.29355083705179846,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2935508370517985
+    },
+    {
+      "id": "0Y91SmKo14Of975gGir__O",
+      "name": "F102-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "0aOSvhdAD4yvE1Ha4RBMZq",
+      "source_face": 102,
+      "note": "OPS F102; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 5.47..7.80 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2883821684483962,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2883821684484099
+    },
+    {
+      "id": "1DCXzymU16ZeP19arH71VU",
+      "name": "F103-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 103,
+      "note": "OPS F103; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 1.18..2.60 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.28705698486669695,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.28705698486669684
+    },
+    {
+      "id": "2j6dYhlVbD8RbeminGwzxG",
+      "name": "F104-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 104,
+      "note": "OPS F104; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.02..4.78 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2844101364680864,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2844101364680864
+    },
+    {
+      "id": "2hMD8za5H17eEOwM0j1Uki",
+      "name": "F105-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 105,
+      "note": "OPS F105; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..3.97 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2809051326441369,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2809051326441354
+    },
+    {
+      "id": "1Mjfum64L82B4nNacd_7qs",
+      "name": "F106-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 106,
+      "note": "OPS F106; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..2.13 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2806376516336499,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2806376516336506
+    },
+    {
+      "id": "0uu3Y4ZGX0DOxyhuCHWwwp",
+      "name": "F107-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 107,
+      "note": "OPS F107; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.41..5.19 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.27884429625130497,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2788442962513055
+    },
+    {
+      "id": "23PD9zHv5D8w30QEUvm211",
+      "name": "F108-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 108,
+      "note": "OPS F108; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.61..7.38 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2742485397131567,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2742485397131632
+    },
+    {
+      "id": "2Wmy_abwH8IBO2pU2JBpDm",
+      "name": "F109-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 109,
+      "note": "OPS F109; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.10..2.09 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2683252790073255,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2683252790073256
+    },
+    {
+      "id": "2KJ$qlO8bDafejwFyjQdxj",
+      "name": "F114-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 114,
+      "note": "OPS F114; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.67..2.60 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2531984561441031,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.25319845614410263
+    },
+    {
+      "id": "2A6JxgqwDA8w164oGcZw0y",
+      "name": "F115-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 115,
+      "note": "OPS F115; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.58..2.61 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2526999138802622,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2526999138802622
+    },
+    {
+      "id": "2EFpnmyHf7cOvdlYROq9wR",
+      "name": "F116-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 116,
+      "note": "OPS F116; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.07..5.19 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.24962548758175462,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.24962548758175448
+    },
+    {
+      "id": "2Xlt$ktK143QxRz59MST2$",
+      "name": "F117-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 117,
+      "note": "OPS F117; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.63..3.82 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 0.187205760807184,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.18720576080718962
+    },
+    {
+      "id": "3YygH$kpTBPwb1zPDPCOGB",
+      "name": "F119-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 119,
+      "note": "OPS F119; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.00..2.06 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.24706996987390806,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.24706996987390809
+    },
+    {
+      "id": "35mXezh4D4Ke0L94q5yyPF",
+      "name": "F120-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 120,
+      "note": "OPS F120; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..2.05 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.24540042405879642,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2454004240587965
+    },
+    {
+      "id": "2ZZqQcsbn8yPqqmgV2Tp$K",
+      "name": "F121-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 121,
+      "note": "OPS F121; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 4.55..5.19 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 0.22979233337672317,
+      "expected_removed_volume_m3": 0.04893100781628375,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.1808613255604448
+    },
+    {
+      "id": "0MScc3E6nC0wuzn2bAM11f",
+      "name": "F123-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 123,
+      "note": "OPS F123; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte -0.00..2.19 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2328599724096716,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.23285997240967274
+    },
+    {
+      "id": "2RPblrkc1029xUVGUI1Bul",
+      "name": "F125-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 125,
+      "note": "OPS F125; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..2.22 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2306234805450481,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.23062348054504814
+    },
+    {
+      "id": "3O0_wnH810GwlZBrffd7fo",
+      "name": "F126-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 126,
+      "note": "OPS F126; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.12..1.92 m. 1 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.24717755154797186,
+      "expected_removed_volume_m3": 0.01731107211283515,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.22986647943513788
+    },
+    {
+      "id": "1tVM5yiJL3MgFplMGy19Cq",
+      "name": "F127-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 127,
+      "note": "OPS F127; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 3.56..4.79 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.22664466938868988,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.226644669388687
+    },
+    {
+      "id": "19VaIkVUb4oQrP_TFno5Qw",
+      "name": "F128-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 128,
+      "note": "OPS F128; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 4.24..7.33 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.22550026663474362,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.22550026663474232
+    },
+    {
+      "id": "0gySD1GA1CZxzohMW0FD2v",
+      "name": "F131-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 131,
+      "note": "OPS F131; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.01..2.17 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.21734562059105,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2173456205910502
+    },
+    {
+      "id": "0DyYAHxUT3$9GRr0HcfLsR",
+      "name": "F133-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 133,
+      "note": "OPS F133; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.35..2.59 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.21448431005776378,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.21448431005776533
+    },
+    {
+      "id": "3w$b_de2r6MwkPS9svGR5g",
+      "name": "F138-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "source_face": 138,
+      "note": "OPS F138; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 0.92..2.60 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.2033577486055007,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.20335774860550068
+    },
+    {
+      "id": "2tAHXxX3jDqAWCYM$bSFzr",
+      "name": "F139-0 roofs",
+      "ifc_class": "IfcRoof",
+      "category": "roofs",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 139,
+      "note": "OPS F139; functie en dikte aangenomen (0.15 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 4.24..4.42 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.15,
+      "expected_gross_volume_m3": 0.15180339921691485,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.15180339921691768
+    },
+    {
+      "id": "3ubHJCcjX4cuWyRY61CZHG",
+      "name": "F142-0 walls",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "source_face": 142,
+      "note": "OPS F142; functie en dikte aangenomen (0.20 m), gecentreerd op gemeten vlak. Geen wandzijde of unieke wand bewezen. Hoogte 2.81..4.31 m. 0 onbevestigde uitsparingen; planreferenties: .",
+      "assumed_thickness_m": 0.2,
+      "expected_gross_volume_m3": 0.20157028655374176,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "opening_profile_simplification_tolerance_m": 0.01,
+      "floor_surface_pair": null,
+      "verified_net_volume_m3": 0.2015702865537419
+    },
+    {
+      "id": "0Y1UoIxJX5cBB9$FuvmN22",
+      "name": "JOIN-001 aansluiting \u2014 AANGENOMEN",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "note": "Aangenomen aansluiting uit IFC-snede; maximaal 5 cm planopening. Bestaande openingsvolumes beschermd; hoogte beperkt tot betrokken wandextenten.",
+      "expected_gross_volume_m3": 0.0016819084184455208,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "reconstructed": true,
+      "verified_net_volume_m3": 0.0016819083426593572
+    },
+    {
+      "id": "2$EneuAuT3zhxKAxq9Vvug",
+      "name": "JOIN-002 aansluiting \u2014 AANGENOMEN",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "note": "Aangenomen aansluiting uit IFC-snede; maximaal 5 cm planopening. Bestaande openingsvolumes beschermd; hoogte beperkt tot betrokken wandextenten.",
+      "expected_gross_volume_m3": 0.002737284319103142,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "reconstructed": true,
+      "verified_net_volume_m3": 0.0027372843191066968
+    },
+    {
+      "id": "002jYcLm1948D7buR6hUmx",
+      "name": "JOIN-003 aansluiting \u2014 AANGENOMEN",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "note": "Aangenomen aansluiting uit IFC-snede; maximaal 5 cm planopening. Bestaande openingsvolumes beschermd; hoogte beperkt tot betrokken wandextenten.",
+      "expected_gross_volume_m3": 0.005408079898629484,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "reconstructed": true,
+      "verified_net_volume_m3": 0.0054080798986244
+    },
+    {
+      "id": "12D_u88NDE5Bwl$XKltkVG",
+      "name": "JOIN-004 aansluiting \u2014 AANGENOMEN",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "note": "Aangenomen aansluiting uit IFC-snede; maximaal 5 cm planopening. Bestaande openingsvolumes beschermd; hoogte beperkt tot betrokken wandextenten.",
+      "expected_gross_volume_m3": 0.00025467433290517595,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "reconstructed": true,
+      "verified_net_volume_m3": 0.0002546743329049162
+    },
+    {
+      "id": "3msGo7UUj8Tvbx5GrxYlQy",
+      "name": "JOIN-005 aansluiting \u2014 AANGENOMEN",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "note": "Aangenomen aansluiting uit IFC-snede; maximaal 5 cm planopening. Bestaande openingsvolumes beschermd; hoogte beperkt tot betrokken wandextenten.",
+      "expected_gross_volume_m3": 0.016627483458647088,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "reconstructed": true,
+      "verified_net_volume_m3": 0.016627483458647174
+    },
+    {
+      "id": "3gGaDlM5LD4PMy2EKkQQ8A",
+      "name": "JOIN-006 aansluiting \u2014 AANGENOMEN",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "note": "Aangenomen aansluiting uit IFC-snede; maximaal 5 cm planopening. Bestaande openingsvolumes beschermd; hoogte beperkt tot betrokken wandextenten.",
+      "expected_gross_volume_m3": 0.007714313524035337,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "reconstructed": true,
+      "verified_net_volume_m3": 0.007714313524035336
+    },
+    {
+      "id": "1wfwLB$dbEUvzj$9aj5lsO",
+      "name": "JOIN-007 aansluiting \u2014 AANGENOMEN",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "note": "Aangenomen aansluiting uit IFC-snede; maximaal 5 cm planopening. Bestaande openingsvolumes beschermd; hoogte beperkt tot betrokken wandextenten.",
+      "expected_gross_volume_m3": 0.009004104100918831,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "reconstructed": true,
+      "verified_net_volume_m3": 0.009004104100917914
+    },
+    {
+      "id": "0nieOB9xPEBuMbSKF6yg7R",
+      "name": "SPACE-001 ruimtekandidaat",
+      "ifc_class": "IfcSpace",
+      "category": "spaces",
+      "storey": "02zfjQ4ZP9589Do_iJKWra",
+      "note": "Ruimtekandidaat 38.92 m\u00b2 uit vloercontour minus IFC-wandsnede en virtuele deurgrenzen. Kan meerdere kamers verbinden; geen bevestigde kamer. Vlak plafond en ruimtegrens voorlopig; deuren blijven open in het wandmodel.",
+      "expected_gross_volume_m3": 97.28821176485997,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "reconstructed": true,
+      "verified_net_volume_m3": 97.28821149793636
+    },
+    {
+      "id": "2_bC_vXe1779sxa8X9P_nh",
+      "name": "JOIN-008 aansluiting \u2014 AANGENOMEN",
+      "ifc_class": "IfcWall",
+      "category": "walls",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "note": "Aangenomen aansluiting uit IFC-snede; maximaal 5 cm planopening. Bestaande openingsvolumes beschermd; hoogte beperkt tot betrokken wandextenten.",
+      "expected_gross_volume_m3": 0.0005872352626412431,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "reconstructed": true,
+      "verified_net_volume_m3": 0.0005872352626417053
+    },
+    {
+      "id": "3RaQLxrNP8ZQM4Jo7lAJ9k",
+      "name": "SPACE-002 ruimtekandidaat",
+      "ifc_class": "IfcSpace",
+      "category": "spaces",
+      "storey": "1Nh2khztn3IQOHQIpVhPes",
+      "note": "Ruimtekandidaat 33.04 m\u00b2 uit vloercontour minus IFC-wandsnede en virtuele deurgrenzen. Kan meerdere kamers verbinden; geen bevestigde kamer. Vlak plafond en ruimtegrens voorlopig; deuren blijven open in het wandmodel.",
+      "expected_gross_volume_m3": 75.98355945948165,
+      "expected_removed_volume_m3": 0.0,
+      "shared_opening_ids": [],
+      "reconstructed": true,
+      "verified_net_volume_m3": 75.98355945948168
+    }
+  ],
+  "excluded_faces": [
+    {
+      "face": 4,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 8,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 12,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 15,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 19,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 21,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 23,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 26,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 38,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 54,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 68,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 74,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 78,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 79,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 90,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 92,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 110,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 111,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 112,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 113,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 118,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 122,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 124,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 129,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 130,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 132,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 134,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 135,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 136,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 137,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 140,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 141,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 143,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 144,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 145,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 146,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 147,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 148,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 149,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 150,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 151,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 152,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 153,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 154,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 155,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 156,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 157,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 158,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 159,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 160,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 161,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 162,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 163,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 164,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 165,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 166,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 167,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 168,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 169,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 170,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 171,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 172,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 173,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 174,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 175,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 176,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 177,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 178,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 179,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 180,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 181,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 182,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 183,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 184,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 185,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 186,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 187,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 188,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 189,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 190,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 191,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 192,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 193,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 194,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 195,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 196,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 197,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 198,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 199,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 200,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 201,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 202,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 203,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 204,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 205,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 206,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 207,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 208,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 209,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 210,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 211,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 212,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 213,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 214,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 215,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 216,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 217,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 218,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 219,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 220,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 221,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 222,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 223,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 224,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 225,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 226,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 227,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 228,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 229,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 230,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 231,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 232,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 233,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 234,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 235,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 236,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 237,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 238,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 239,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 240,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 241,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 242,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 243,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 244,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 245,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 246,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 247,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 248,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 249,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 250,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 251,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 252,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 253,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 254,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 255,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 256,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 257,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 258,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 259,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 260,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 261,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 262,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 263,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 264,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 265,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 266,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 267,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 268,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 269,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 270,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 271,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 272,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 273,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 274,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 275,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 276,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 277,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 278,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 279,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 280,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 281,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 282,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 283,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 284,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 285,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 286,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 287,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 288,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 289,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 290,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 291,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 292,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 293,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 294,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 295,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 296,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 297,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 298,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 299,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 300,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 301,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 302,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 303,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 304,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 305,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 306,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 307,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 308,
+      "reason": "Outside explicit provisional selection rules"
+    },
+    {
+      "face": 309,
+      "reason": "Outside explicit provisional selection rules"
+    }
+  ],
+  "opening_count": 37,
+  "connection_proposals": [
+    {
+      "name": "JOIN-001",
+      "storey": 0,
+      "area_m2": 0.0008534306175321104,
+      "height_range_m": [
+        0.0,
+        1.9707617513291746
+      ],
+      "support_elements": [
+        "1FTICe5ED9MOEvmkpaZP6q",
+        "0a7wylOZzCGQMGoATLrl8X"
+      ],
+      "maximum_gap_m": 0.05
+    },
+    {
+      "name": "JOIN-002",
+      "storey": 0,
+      "area_m2": 0.0013889473536093282,
+      "height_range_m": [
+        0.0,
+        1.9707617513291746
+      ],
+      "support_elements": [
+        "0PvlPv98H0ax5Ub1Of9P_o",
+        "0a7wylOZzCGQMGoATLrl8X"
+      ],
+      "maximum_gap_m": 0.05
+    },
+    {
+      "name": "JOIN-003",
+      "storey": 0,
+      "area_m2": 0.0031579154515688937,
+      "height_range_m": [
+        0.8997786214587201,
+        2.612326022290075
+      ],
+      "support_elements": [
+        "1FTICe5ED9MOEvmkpaZP6q",
+        "1A$Fr9$7X6vBhOXhIVicSs"
+      ],
+      "maximum_gap_m": 0.05
+    },
+    {
+      "name": "JOIN-004",
+      "storey": 0,
+      "area_m2": 0.00012602643300544766,
+      "height_range_m": [
+        0.5815681037461893,
+        2.6023690328192775
+      ],
+      "support_elements": [
+        "2n5LGl7ur2ZfOyR09Kl6hN",
+        "1snI_xDyn4feTQpSC67UI8",
+        "2A6JxgqwDA8w164oGcZw0y"
+      ],
+      "maximum_gap_m": 0.05
+    },
+    {
+      "name": "JOIN-005",
+      "storey": 0,
+      "area_m2": 0.006809083455070074,
+      "height_range_m": [
+        0.005356272676594331,
+        2.4473124578759675
+      ],
+      "support_elements": [
+        "2n5LGl7ur2ZfOyR09Kl6hN",
+        "26Pj9ET0TCOORjCkZ7Wnf$",
+        "145jqLazP0uOlNzq9G3a_9",
+        "1snI_xDyn4feTQpSC67UI8"
+      ],
+      "maximum_gap_m": 0.05
+    },
+    {
+      "name": "JOIN-006",
+      "storey": 0,
+      "area_m2": 0.0029810606006827538,
+      "height_range_m": [
+        0.005062050475456825,
+        2.592836858632166
+      ],
+      "support_elements": [
+        "145jqLazP0uOlNzq9G3a_9",
+        "39FcRQNjPE1vlGV6kf90hA"
+      ],
+      "maximum_gap_m": 0.05
+    },
+    {
+      "name": "JOIN-007",
+      "storey": 0,
+      "area_m2": 0.00454622084294357,
+      "height_range_m": [
+        0.08146832239503454,
+        2.0620373294846432
+      ],
+      "support_elements": [
+        "0awjpJ3Qf03gu0yaLmMLZ6",
+        "0gySD1GA1CZxzohMW0FD2v"
+      ],
+      "maximum_gap_m": 0.05
+    },
+    {
+      "name": "JOIN-008",
+      "storey": 1,
+      "area_m2": 0.00031084776280660645,
+      "height_range_m": [
+        3.263002250690533,
+        5.152143280174444
+      ],
+      "support_elements": [
+        "2xbMqq7gb9zfEDUbTi3pGF",
+        "3TgW7bn2L2OOvqWJiewV_Q"
+      ],
+      "maximum_gap_m": 0.05
+    }
+  ],
+  "room_candidates": [
+    {
+      "name": "SPACE-001",
+      "storey": 0,
+      "area_m2": 38.91528470594399,
+      "virtual_door_boundaries": 3,
+      "status": "Candidate connected region; not confirmed individual room"
+    },
+    {
+      "name": "SPACE-002",
+      "storey": 1,
+      "area_m2": 33.03633019977463,
+      "virtual_door_boundaries": 0,
+      "status": "Candidate connected region; not confirmed individual room"
+    }
+  ],
+  "unhosted_shared_opening_references": [
+    "O08"
+  ],
+  "unhosted_opening_reason": "No selected face material intersects this candidate; no host wall invented. Retained in the shared 2D review registry.",
+  "opening_profile_simplification_tolerance_m": 0.01,
+  "viewer_geometry": "IfcOpenShell create_shape from saved IFC with boolean opening subtraction"
+}
